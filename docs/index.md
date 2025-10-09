@@ -3,7 +3,7 @@ layout: home
 
 hero:
   name: "ChmlFrp 内网穿透"
-  text: "全平台一站式内网映射解决方案"
+  text: "教程文档"
   tagline: 支持 Windows/macOS/Linux/安卓/路由器，免费、高速、稳定、不限流量。
   actions:
     - theme: brand
@@ -61,7 +61,7 @@ const fetchStats = async () => {
     }
   } catch (err) {
     console.error('Failed to fetch stats', err)
-    stats.value = { nodes: 30, tunnels: 45000, users: 40000 }
+    stats.value = { nodes: 35, tunnels: 55000, users: 50000 }
   }
 }
 

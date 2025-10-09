@@ -19,7 +19,7 @@ editLink: true
       <div class="qq-group-title">QQ一群</div>
     </div>
     <div class="qq-group-body">
-      <p>群号：<code>123456789</code>（已满）</p>
+      <p>群号：<code>992067118</code>（已满）</p>
     </div>
   </div>
 </ClientOnly>
@@ -30,7 +30,7 @@ editLink: true
       <div class="qq-group-title">QQ二群</div>
     </div>
     <div class="qq-group-body">
-      <p>群号：<code>987654321</code></p>
+      <p>群号：<code>592908249</code>（已满）</p>
     </div>
   </div>
 </ClientOnly>
@@ -41,7 +41,7 @@ editLink: true
       <div class="qq-group-title">QQ三群</div>
     </div>
     <div class="qq-group-body">
-      <p>群号：<code>567891234</code></p>
+      <p>群号：<code>838521529</code></p>
     </div>
   </div>
 </ClientOnly>
@@ -57,7 +57,8 @@ editLink: true
       <div class="wechat-group-title">微信一群</div>
     </div>
     <div class="wechat-group-body">
-      <p>扫码加入TechCat企业微信群</p>
+    我们暂无微信群，预计未来开放
+      <!-- <p>扫码加入TechCat企业微信群</p> -->
       <!-- <img src="/path/to/wechat-qr1.png" alt="微信群二维码" width="150"> -->
     </div>
   </div>

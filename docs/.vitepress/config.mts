@@ -13,9 +13,9 @@ export default defineConfig({
     },
     nav: [
       { text: '首页', link: '/' },
-      { text: '使用文档', link: '/123/' },
-      { 
-        text: 'API文档', 
+      { text: '使用文档', link: '/docs/' },
+      {
+        text: 'API文档',
         items: [
           { text: 'v1 版本', link: '/API/v1/' },
           { text: 'v2 版本', link: '/API/v2/' }
@@ -30,8 +30,8 @@ export default defineConfig({
           text: 'API v1 文档',
           items: [
             { text: 'v1 介绍', link: '/API/v1/' },
-            { 
-              text: '用户认证', 
+            {
+              text: '用户认证',
               items: [
                 { text: '登录', link: '/API/v1/User_Actions/login' },
                 { text: '重置令牌', link: '/API/v1/User_Actions/resusertoken' },
@@ -42,13 +42,13 @@ export default defineConfig({
                 { text: '兑换码兑换', link: '/API/v1/User_Actions/giftcode' },
               ]
             },
-            { 
+            {
               text: '域名操作',
               items: [
                 { text: '域名解析查询', link: '/API/v1/Domain_name_query/Domain_name_query' },
               ]
             },
-            { 
+            {
               text: '面板信息',
               items: [
                 { text: '面板设置', link: '/API/v1/usersetup/usersetup' },
@@ -80,8 +80,8 @@ export default defineConfig({
           text: 'API v2 文档',
           items: [
             { text: 'v2 介绍', link: '/API/v2/' },
-            { 
-              text: '用户认证', 
+            {
+              text: '用户认证',
               items: [
                 { text: '登录', link: '/API/v2/User_Actions/login' },
                 { text: '用户信息', link: '/API/v2/User_Actions/userinfo' },
@@ -93,7 +93,7 @@ export default defineConfig({
                 { text: '获取消息', link: '/API/v2/User_Actions/messages' },
               ]
             },
-            { 
+            {
               text: '隧道操作',
               items: [
                 { text: '隧道列表', link: '/API/v2/Tunnel_operations/tunnel' },
@@ -103,14 +103,14 @@ export default defineConfig({
                 { text: '生成配置文件', link: '/API/v2/Tunnel_operations/tunnel_config' },
               ]
             },
-            { 
+            {
               text: '面板信息',
               items: [
                 { text: '面板信息', link: '/API/v2/Panel_information/panelinfo' },
                 { text: 'API状态', link: '/API/v2/Panel_information/server-status' }
               ]
             },
-            { 
+            {
               text: '域名操作',
               items: [
                 { text: '获取可用域名列表', link: '/API/v2/Domain_name_operations/list_available_domains' },
@@ -132,6 +132,55 @@ export default defineConfig({
             },
           ]
         }
+      ],
+      '/docs/': [
+        {
+          text: 'ChmlFrp 文档',
+          items: [
+            { text: '首页', link: '/docs/' },
+            { text: '软件下载的选择', link: '/docs/guide/download' },
+            {
+              text: '使用文档',
+              items: [
+                { text: '映射使用教程', link: '/docs/use/mapping' },
+                { text: '映射开机自启', link: '/docs/use/autostart' },
+                { text: '注册与注销账户', link: '/docs/use/account' },
+                { text: '创建隧道', link: '/docs/use/tunnel-create' },
+                { text: '启动隧道', link: '/docs/use/tunnel-start' },
+              ],
+            },
+            {
+              text: '其他教程',
+              items: [
+                { text: 'MC 外置登录', link: '/docs/other/mc-login' },
+                { text: 'MC 联机教程', link: '/docs/other/mc-connect' },
+                { text: '远程连接', link: '/docs/other/remote-connect' },
+                { text: 'CS2 联机教程', link: '/docs/other/cs2-connect' },
+                { text: '数字 IP 获取', link: '/docs/other/ip-lookup' },
+                { text: '电脑开关机', link: '/docs/other/pc-power' },
+                { text: 'MCSM 搭建', link: '/docs/other/mcsm-setup' },
+                { text: '像素工厂联机', link: '/docs/other/pixel-factory' },
+                { text: '幻兽帕鲁开服', link: '/docs/other/fabulu-open' },
+                { text: '铁锈战争联机', link: '/docs/other/rust-wars' },
+              ],
+            },
+            {
+              text: '域名解析',
+              items: [
+                { text: 'CNAME 解析', link: '/docs/dns/cname' },
+                { text: 'SRV 解析', link: '/docs/dns/srv' },
+                { text: 'A 记录解析', link: '/docs/dns/a-record' },
+              ],
+            },
+            {
+              text: '常见问题',
+              items: [
+                { text: 'Frpc 软件问题', link: '/docs/faq/frpc' },
+                { text: '网站相关问题', link: '/docs/faq/website' },
+              ],
+            },
+          ],
+        },
       ]
     },
 

@@ -1,6 +1,6 @@
 # ChmlFrp Docs
 
-如果您是初次启动隧道，请直接查看隧道启动教程。此教程内包含多数系统的启动教程。
+如果您是初次启动隧道，请直接查看[映射使用教程](/docs/guide/mapping)。此教程内包含多数系统的启动教程。
 
 <div class="group-container">
   <a class="group-card" href="/docs/guide/download">软件下载的选择</a>
@@ -14,8 +14,6 @@
   <a class="group-card" href="/docs/use/mapping">映射使用教程</a>
   <a class="group-card" href="/docs/use/autostart">映射开机自启</a>
   <a class="group-card" href="/docs/use/account">注册与注销账户</a>
-  <a class="group-card" href="/docs/use/tunnel-create">创建隧道</a>
-  <a class="group-card" href="/docs/use/tunnel-start">启动隧道</a>
 </div>
 
 ## 🛠️ 其他教程
@@ -25,8 +23,6 @@
   <a class="group-card" href="/docs/other/mc-connect">MC联机教程</a>
   <a class="group-card" href="/docs/other/remote-connect">远程连接教程</a>
   <a class="group-card" href="/docs/other/cs2-connect">CS2联机教程</a>
-  <a class="group-card" href="/docs/other/ip-lookup">获取数字IP教程</a>
-  <a class="group-card" href="/docs/other/pc-power">电脑开机与关机教程</a>
   <a class="group-card" href="/docs/other/mcsm-setup">MCSM搭建教程</a>
   <a class="group-card" href="/docs/other/pixel-factory">像素工厂联机教程</a>
   <a class="group-card" href="/docs/other/fabulu-open">幻兽帕鲁开服教程</a>

@@ -140,14 +140,13 @@ export default defineConfig({
             { text: '首页', link: '/docs/' },
             { text: '软件下载的选择', link: '/docs/guide/download' },
             { text: '如何正确提问', link: '/docs/guide/question' },
+            { text: '友链申请须知', link: '/docs/guide/friends' },
             {
               text: '使用文档',
               items: [
                 { text: '映射使用教程', link: '/docs/use/mapping' },
                 { text: '映射开机自启', link: '/docs/use/autostart' },
-                { text: '注册与注销账户', link: '/docs/use/account' },
-                { text: '创建隧道', link: '/docs/use/tunnel-create' },
-                { text: '启动隧道', link: '/docs/use/tunnel-start' },
+                { text: '注册与注销账户', link: '/docs/use/account' }
               ],
             },
             {
@@ -157,8 +156,6 @@ export default defineConfig({
                 { text: 'MC 联机教程', link: '/docs/other/mc-connect' },
                 { text: '远程连接', link: '/docs/other/remote-connect' },
                 { text: 'CS2 联机教程', link: '/docs/other/cs2-connect' },
-                { text: '数字 IP 获取', link: '/docs/other/ip-lookup' },
-                { text: '电脑开关机', link: '/docs/other/pc-power' },
                 { text: 'MCSM 搭建', link: '/docs/other/mcsm-setup' },
                 { text: '像素工厂联机', link: '/docs/other/pixel-factory' },
                 { text: '幻兽帕鲁开服', link: '/docs/other/fabulu-open' },
@@ -186,7 +183,7 @@ export default defineConfig({
     },
 
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/vuejs/vitepress' }
+      { icon: 'github', link: 'https://github.com/TechCat-Team/ChmlFrp-Docs' }
     ],
 
     footer: {

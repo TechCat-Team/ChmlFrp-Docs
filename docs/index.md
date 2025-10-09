@@ -8,7 +8,7 @@ hero:
   actions:
     - theme: brand
       text: 查阅文档 →
-      link: https://docs.chcat.cn/docs/
+      link: /docs
       icon: ⚡️
     - theme: alt
       text: 立即使用

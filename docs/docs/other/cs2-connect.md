@@ -19,7 +19,7 @@
 
 点击右下角开始 ~~放置一旁备用~~
 
-访问[chmlfrp官网](panel.chmlfrp.cn)
+访问[chmlfrp官网](https://panel.chmlfrp.cn)
 
 进行创建隧道
 

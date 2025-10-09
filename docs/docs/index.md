@@ -1,6 +1,6 @@
 # ChmlFrp Docs
 
-如果您是初次启动隧道，请直接查看[映射使用教程](/docs/guide/mapping)。此教程内包含多数系统的启动教程。
+如果您是初次启动隧道，请直接查看[映射使用教程](/docs/use/mapping)。此教程内包含多数系统的启动教程。
 
 <div class="group-container">
   <a class="group-card" href="/docs/guide/download">软件下载的选择</a>

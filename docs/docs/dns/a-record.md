@@ -49,19 +49,19 @@ ping vip.bj.1.frp.one
 
 输入你的账号密码进行登录
 
-![cloudflare登录界面](../../../../static/img/yuming/cloudflare1.png)
+![cloudflare登录界面](./img/a-record/cloudflare1.png)
 
 选择你需要挂解析的域名
 
-![cloudflare主界面](../../../../static/img/yuming/cloudflare2.png)
+![cloudflare主界面](./img/a-record/cloudflare2.png)
 
 点击右上方的DNS设置
 
-![cloudflare域名转DNS设置界面](../../../../static/img/yuming/cloudflare3.png)
+![cloudflare域名转DNS设置界面](./img/a-record/cloudflare3.png)
 
 点击添加记录
 
-![cloudflareDNS设置界面](../../../../static/img/yuming/cloudflare4.png)
+![cloudflareDNS设置界面](./img/a-record/cloudflare4.png)
 
 输入以下内容
 

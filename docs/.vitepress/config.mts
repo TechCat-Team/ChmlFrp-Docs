@@ -139,6 +139,7 @@ export default defineConfig({
           items: [
             { text: '首页', link: '/docs/' },
             { text: '软件下载的选择', link: '/docs/guide/download' },
+            { text: '如何正确提问', link: '/docs/guide/question' },
             {
               text: '使用文档',
               items: [

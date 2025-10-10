@@ -9,7 +9,7 @@ Q/A
 
 ## 视频教程
 
-[【ChmlFrp V3版食用教程】 —— UP:MilkyMay5201314](https://www.bilibili.com/video/BV1mgbxzkExC)
+[【ChmlFrp V3版食用教程】 —— UP:MilkyMay5201314](https://www.bilibili.com/video/BV13wewz8EBN)
 
 ## 图文教程
 
@@ -25,11 +25,15 @@ Q/A
 
 ![注册截图](./img/mapping//2.png)
 
+![注册详情截图](./img/mapping//20.png)
+
 已有账户可直接登录
 
 ![登录截图](./img/mapping//3.png)
 
 如果您没有实名认证，主页会标注"您尚未实名"，点击实名提示框即可跳转至实名认证页面。
+
+![实名认证提示截图](./img/mapping//21.png)
 
 如果您已实名，进入控制面板后请依次点击 "隧道管理" "隧道列表"
 
@@ -43,30 +47,35 @@ Q/A
 
 ![节点选择截图](./img/mapping//6.png)
 
+这里会显示该节点的所有需要信息
+
+![节点选择信息截图](./img/mapping//22.png)
+
+点击继续
+
 输入您的隧道信息
 
 ![创建隧道截图](./img/mapping//7.png)
 
- - 隧道名称也就是隧道ID 非必要不建议动
- - 本地IP就是你要映射的本地IP 一般为127.0.0.1,也就是本机
+ - 隧道名称也就是隧道ID 非必要不建议动(此ID为该节点公用，并非单您账户使用)
+ - 本地IP就是你要映射的本地IP 一般为127.0.0.1,也就是本机(如给局域网其他机器使用，请填写该机器的内网IP地址)
  - 节点选择就是你刚刚选择的节点
- - 端口类型可以选一下你要什么协议 例：TCP UDP HTTP
- - 内网端口就是你要映射的本地端口号(不限制端口)
- - 外网端口是映射后的外网端口号 非必要不建议动
+ - 端口类型可以选一下你要什么协议 例：TCP UDP HTTP HTTPS(HTTPS需您自备SSL证书并配置好)
+ - 内网端口就是你要映射的本地端口号(非0)
+ - 外网端口是映射后的外网端口号(为该节点公用，重复请输入其他端口号)
  - 高级设置 非必要不建议动
-
-注意: 这里填写完端口号需要在底下再点一遍 否则不会录入
 
 ![录入节点截图](./img/mapping//8.png)
 
+当出现这个提示时
 这样 你的内网穿透隧道就创建好了
-链接地址就是你的映射后外网地址
+你的映射后外网地址就是链接地址
 
 ## Windows 启动隧道(FRPC)
 
 ### Windows frpc下载
 
-首先进入到你的服务器中 用网页打开[chmlfrp官网中的软件下载](https://panel.chmlfrp.cn/tunnelm/dw)界面
+首先进入到你的服务器中 用网页打开[chmlfrp官网中的软件下载](https://panel.chmlfrp.cn/tunnel/download)界面
 
 ![软件下载截图](./img/mapping//windowsfrpc1.png)
 
@@ -75,7 +84,7 @@ Q/A
 
 右键此电脑->属性 在系统类型里会写xx位操作系统 基于xxx的处理器
 
-当你下载完成后 请解压压缩包 使其变为文件夹
+当你下载完成后 请解压压缩包成文件夹
 
 ![解压截图](./img/mapping//windowsfrpc2.png)
 
@@ -87,7 +96,7 @@ Q/A
 
 ![frpcini截图](./img/mapping//windowsfrpc4.png)
 
-回到浏览器 打开[Chmlfrp配置文件](https://panel.chmlfrp.cn/tunnelm/config)页面
+回到浏览器 打开[Chmlfrp配置文件](https://panel.chmlfrp.cn/tunnel/config)页面
 
 ![浏览器配置文件页面截图](./img/mapping//windowsfrpc5.png)
 

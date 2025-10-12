@@ -22,13 +22,25 @@ jobs:
       uses: actions/setup-node@v4
       with:
         node-version: ${{ env.NODE_VERSION }}
-        cache: 'pnpm'
         
     - name: Setup pnpm
-      uses: pnpm/action-setup@v2
+      uses: pnpm/action-setup@v4
       with:
         version: ${{ env.PNPM_VERSION }}
         
+    - name: Get pnpm store directory
+      shell: bash
+      run: |
+        echo "STORE_PATH=$(pnpm store path --silent)" >> $GITHUB_ENV
+        
+    - name: Setup pnpm cache
+      uses: actions/cache@v4
+      with:
+        path: ${{ env.STORE_PATH }}
+        key: ${{ runner.os }}-pnpm-store-${{ hashFiles('**/pnpm-lock.yaml') }}
+        restore-keys: |
+          ${{ runner.os }}-pnpm-store-
+          
     - name: Install dependencies
       run: pnpm install
       
@@ -60,17 +72,20 @@ jobs:
         username: ${{ secrets.VPS_USERNAME }}
         key: ${{ secrets.VPS_SSH_KEY }}
         script: |
+          echo "🚀 开始部署 ChmlFrp 文档..."
+          
           # 清空目标目录
           sudo rm -rf /www/wwwroot/docs.chmlfrp.cn/*
           
-          # 上传构建文件到 VPS 临时目录
-          sudo mkdir -p /tmp/chmlfrp-docs-build
+          # 复制构建文件到部署目录
+          sudo cp -r ./* /www/wwwroot/docs.chmlfrp.cn/ 2>/dev/null || true
           
-          # 同步文件到部署目录
-          sudo rsync -avz ./ /www/wwwroot/docs.chmlfrp.cn/
+          # 如果 cp 失败，使用更稳健的方法
+          sudo find . -maxdepth 1 -name '*' -exec cp -r {} /www/wwwroot/docs.chmlfrp.cn/ \; 2>/dev/null || true
           
           # 设置正确的权限
-          sudo chown -R www-data:www-data /www/wwwroot/docs.chmlfrp.cn/
-          sudo chmod -R 755 /www/wwwroot/docs.chmlfrp.cn/
+          sudo chown -R www:www /www/wwwroot/docs.chmlfrp.cn/ 2>/dev/null || sudo chown -R www-data:www-data /www/wwwroot/docs.chmlfrp.cn/
+          sudo find /www/wwwroot/docs.chmlfrp.cn -type f -exec chmod 644 {} \;
+          sudo find /www/wwwroot/docs.chmlfrp.cn -type d -exec chmod 755 {} \;
           
-          echo "ChmlFrp 文档自动部署完成"
+          echo "✅ ChmlFrp 文档自动部署完成！"

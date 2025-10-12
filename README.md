@@ -27,7 +27,7 @@
 
 ```bash
 # 克隆仓库
-git clone <repository-url>
+git clone https://github.com/TechCat-Team/ChmlFrp-Docs.git
 cd chmlfrp-docs
 
 # 安装依赖
@@ -64,10 +64,10 @@ chmlfrp-docs/
 
 #### ✨ 功能特性
 
--[object Object]*: 自动遍历指定目录及其子目录中的所有 PNG 文件
+- **📁 自动遍历**: 自动遍历指定目录及其子目录中的所有 PNG 文件
 - **⚙️ 质量控制**: 支持自定义 WebP 质量设置 (1-100)
-- **[object Object]时显示转换进度和统计信息
--[object Object]间节省**: 显示文件大小压缩统计
+- **📊 进度显示**: 转换时显示转换进度和统计信息
+- **💾 空间节省**: 显示文件大小压缩统计
 - **🗑️ 可选删除**: 可选择转换后删除原 PNG 文件
 - **⚡ 高效处理**: 支持批量处理大量文件
 - **🛡️ 错误处理**: 完善的错误处理和异常捕获

@@ -203,9 +203,10 @@ python ./tools/convert_png_to_webp.py ./docs --quality 90 --delete-original
 
 ### 开发规范
 
-- 遵循现有的代码风格
-- 为新功能添加相应的文档
-- 确保所有测试通过
+- 遵循项目中已有的 Markdown 和代码风格
+- 我们使用 Vitepress 框架，请确保您的 Markdown 语法与其兼容
+- 确保所有内部链接正确无误
+- 在提交前，请在项目根目录运行 pnpm docs:dev 和 pnpm docs:build 以确保本地开发服务器能正常启动，并预览您的更改，同时能正常构建，无报错。
 - 提交信息使用清晰的中文描述
 
 ## 📄 许可证
@@ -216,7 +217,7 @@ python ./tools/convert_png_to_webp.py ./docs --quality 90 --delete-original
 
 <div align="center">
 
-**[ChmlFrp](https://chmlfrp.com)** • **[文档](https://docs.chmlfrp.com)** • **[社区](https://community.chmlfrp.com)**
+**[ChmlFrp](https://www.chmlfrp.cn)** • **[文档](https://docs.chmlfrp.cn)**
 
 Made with ❤️ by ChmlFrp Team
 

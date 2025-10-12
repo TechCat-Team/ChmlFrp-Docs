@@ -8,7 +8,6 @@ on:
 
 env:
   NODE_VERSION: '20'
-  PNPM_VERSION: '10'
 
 jobs:
   build-and-test:
@@ -25,9 +24,7 @@ jobs:
         
     - name: Setup pnpm
       uses: pnpm/action-setup@v4
-      with:
-        version: ${{ env.PNPM_VERSION }}
-        
+      
     - name: Get pnpm store directory
       shell: bash
       run: |
@@ -79,9 +76,6 @@ jobs:
           
           # 复制构建文件到部署目录
           sudo cp -r ./* /www/wwwroot/docs.chmlfrp.cn/ 2>/dev/null || true
-          
-          # 如果 cp 失败，使用更稳健的方法
-          sudo find . -maxdepth 1 -name '*' -exec cp -r {} /www/wwwroot/docs.chmlfrp.cn/ \; 2>/dev/null || true
           
           # 设置正确的权限
           sudo chown -R www:www /www/wwwroot/docs.chmlfrp.cn/ 2>/dev/null || sudo chown -R www-data:www-data /www/wwwroot/docs.chmlfrp.cn/

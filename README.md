@@ -108,26 +108,26 @@ pip install --upgrade Pillow
 
 ```bash
 # 转换当前目录下的所有 PNG 文件
-python convert_png_to_webp.py
+python ./tools/convert_png_to_webp.py
 
 # 转换指定目录
-python convert_png_to_webp.py ./docs
+python ./tools/convert_png_to_webp.py ./docs
 ```
 
 ##### 高级选项
 
 ```bash
 # 设置 WebP 质量为 90%
-python convert_png_to_webp.py ./docs --quality 90
+python ./tools/convert_png_to_webp.py ./docs --quality 90
 
 # 转换后删除原 PNG 文件
-python convert_png_to_webp.py ./docs --delete-original
+python ./tools/convert_png_to_webp.py ./docs --delete-original
 
 # 静默模式（只显示最终统计）
-python convert_png_to_webp.py ./docs --quiet
+python ./tools/convert_png_to_webp.py ./docs --quiet
 
 # 组合使用
-python convert_png_to_webp.py ./docs --quality 85 --delete-original --quiet
+python ./tools/convert_png_to_webp.py ./docs --quality 85 --delete-original --quiet
 ```
 
 ##### 参数说明
@@ -143,10 +143,10 @@ python convert_png_to_webp.py ./docs --quality 85 --delete-original --quiet
 
 ```bash
 # 推荐设置：高质量转换，保留原文件
-python convert_png_to_webp.py ./docs --quality 90
+python ./tools/convert_png_to_webp.py ./docs --quality 90
 
 # 确认转换效果满意后，可以删除原文件
-python convert_png_to_webp.py ./docs --quality 90 --delete-original
+python ./tools/convert_png_to_webp.py ./docs --quality 90 --delete-original
 ```
 
 **质量设置建议：**

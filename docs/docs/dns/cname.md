@@ -14,19 +14,19 @@
 
 输入你的账号密码进行登录
 
-![cloudflare登录界面](./img/cname/cloudflare1.png)
+![cloudflare登录界面](./img/cname/cloudflare1.webp)
 
 选择你需要挂解析的域名
 
-![cloudflare主界面](./img/cname/cloudflare2.png)
+![cloudflare主界面](./img/cname/cloudflare2.webp)
 
 点击右上方的DNS设置
 
-![cloudflare域名转DNS设置界面](./img/cname/cloudflare3.png)
+![cloudflare域名转DNS设置界面](./img/cname/cloudflare3.webp)
 
 点击添加记录
 
-![cloudflareDNS设置界面](./img/cname/cloudflare4.png)
+![cloudflareDNS设置界面](./img/cname/cloudflare4.webp)
 
 输入以下内容
 
@@ -40,7 +40,7 @@
  - 名称：wz
  - 目标：bj.frp.one
 
-![cloudflareDNS保存界面](./img/cname/cloudflare7.png)
+![cloudflareDNS保存界面](./img/cname/cloudflare7.webp)
 
 点击右下角的保存
 

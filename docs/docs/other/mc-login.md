@@ -9,18 +9,18 @@
 
 首先访问LittleSkin的官网
 
-![官网](./img/mc-login/wzdl1.png)
+![官网](./img/mc-login/wzdl1.webp)
 
 点击屏幕正中央的'现在注册'
 
 输入你的邮箱，密码，想在我的世界里起的名字和验证码
 
-![zc](./img/mc-login/wzdl2.png)
+![zc](./img/mc-login/wzdl2.webp)
 
 然后根据个人喜好 注册名字，添加皮肤等
 （注意：皮肤名字不可以跟正版，外置重复）
 
-![zym](./img/mc-login/wzdl3.png)
+![zym](./img/mc-login/wzdl3.webp)
 
 ## 启动器教程
 
@@ -29,11 +29,11 @@
 
 这里拿HMCL举例
 
-![HMCL](./img/mc-login/wzdl4.png)
+![HMCL](./img/mc-login/wzdl4.webp)
 
 点击左上角的 **没有游戏帐户**
 
-![HMCLzhym](./img/mc-login/wzdl5.png)
+![HMCLzhym](./img/mc-login/wzdl5.webp)
 
 点击左下角的 **添加认证服务器**
 
@@ -44,33 +44,33 @@
 https://littleskin.cn/
 ```
 
-![HMCLdzym](./img/mc-login/wzdl6.png)
+![HMCLdzym](./img/mc-login/wzdl6.webp)
 
 点击下一步  
 这里会让您确认是否是这个认证服务器
 
-![HMCLqrym](./img/mc-login/wzdl7.png)
+![HMCLqrym](./img/mc-login/wzdl7.webp)
 
 如果无误就可以点击完成  
 此时 左边登录选项应该会多出一个 **LittleSkin**
 
-![HMCLdl](./img/mc-login/wzdl8.png)
+![HMCLdl](./img/mc-login/wzdl8.webp)
 
 点击 **LittleSkin**
 输入注册时所用的邮箱和密码
 
-![HMCLzm](./img/mc-login/wzdl9.png)
+![HMCLzm](./img/mc-login/wzdl9.webp)
 
 注意：此步需要先验证邮箱 否则就会....
 
-![HMCLyzyx](./img/mc-login/wzdl10.png)
+![HMCLyzyx](./img/mc-login/wzdl10.webp)
 
 如果验证邮箱正常成功登录后
 就会让你选择角色
 
-![HMCLxzjs](./img/mc-login/wzdl11.png)
+![HMCLxzjs](./img/mc-login/wzdl11.webp)
 
 点击你所想要的角色即可  
 然后就可以正常游玩了
 
-![HMCLxzjs](./img/mc-login/wzdl12.png)
+![HMCLxzjs](./img/mc-login/wzdl12.webp)

@@ -4,23 +4,23 @@
 
 首先 打开我的世界 进入您要联机的存档
 
-![存档](./img/mc-connect/jywlj1.png)
+![存档](./img/mc-connect/jywlj1.webp)
 
 点击键盘上的esc 打开游戏菜单 点击对局域网开放
 
-![游戏菜单](./img/mc-connect/jywlj2.png)
+![游戏菜单](./img/mc-connect/jywlj2.webp)
 
 接下来 设置一下游戏模式 允许作弊 还有端口号吧（自定义端口号在1.20被加入）
 
-![局域网菜单](./img/mc-connect/jywlj3.png)
+![局域网菜单](./img/mc-connect/jywlj3.webp)
 
 就像....这样 ฅ՞•ﻌ•՞ฅ
 
-![局域网菜单1](./img/mc-connect/jywlj4.png)
+![局域网菜单1](./img/mc-connect/jywlj4.webp)
 
 出现这条就说明 你的世界已经在局域网开放了
 
-![局域网菜单1](./img/mc-connect/jywlj5.png)
+![局域网菜单1](./img/mc-connect/jywlj5.webp)
 
 到这里局域网(同一个网络)下的玩家已经可以进服务器了，在多人游戏那边能搜索到局域网服务器。**如果想要异地的朋友也能进，则需要使用映射**
 
@@ -50,7 +50,7 @@
 
 然后把端放在任何一个文件夹里 就像...这样
 
-![文件夹](./img/mc-connect/fwqlj1.png)
+![文件夹](./img/mc-connect/fwqlj1.webp)
 
 嗯...你或许还需要一个启动文件
 
@@ -60,7 +60,7 @@
 
 前面你想起什么名字起什么名字 后缀词改为bat就好啦
 
-![bat展示](./img/mc-connect/fwqlj2.png)
+![bat展示](./img/mc-connect/fwqlj2.webp)
 
 然后右键->编辑 里头写上以下代码
 
@@ -75,7 +75,7 @@ server.jar是你的核心名字
 
 pause是指结束后不立马关闭cmd 以便于检修
 
-![bat内部代码](./img/mc-connect/fwqlj3.png)
+![bat内部代码](./img/mc-connect/fwqlj3.webp)
 
 这就是最基本的一个启动项
 
@@ -85,7 +85,7 @@ pause是指结束后不立马关闭cmd 以便于检修
 
 像这样
 
-![命令提示符1](./img/mc-connect/fwqlj4.png)
+![命令提示符1](./img/mc-connect/fwqlj4.webp)
 
 他就正式开始下载内容了
 
@@ -95,7 +95,7 @@ pause是指结束后不立马关闭cmd 以便于检修
 [ServerMain/INFO]: You need to agree to the EULA in order to run the server. Go to eula.txt for more info.
 ```
 
-![EULA协议错误](./img/mc-connect/fwqlj5.png)
+![EULA协议错误](./img/mc-connect/fwqlj5.webp)
 
 证明 你没有同意他的协议 需要你手动打开 EULA.txt
 
@@ -106,11 +106,11 @@ eula=true
 ```
 
 就像这样
-![EULA协议txt](./img/mc-connect/fwqlj6.png)
+![EULA协议txt](./img/mc-connect/fwqlj6.webp)
 
 此时再次双击打开bat
 
-![命令提示符2](./img/mc-connect/fwqlj7.png)
+![命令提示符2](./img/mc-connect/fwqlj7.webp)
 
 当出现
 

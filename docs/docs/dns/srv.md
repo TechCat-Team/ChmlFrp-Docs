@@ -14,19 +14,19 @@ SRV解析一般用于MCJAVA服务端隐藏端口连接服务器等，此教程�
 
 输入你的账号密码进行登录
 
-![cloudflare登录界面](./img/srv/cloudflare1.png)
+![cloudflare登录界面](./img/srv/cloudflare1.webp)
 
 选择你需要挂解析的域名
 
-![cloudflare主界面](./img/srv/cloudflare2.png)
+![cloudflare主界面](./img/srv/cloudflare2.webp)
 
 点击右上方的DNS设置
 
-![cloudflare域名转DNS设置界面](./img/srv/cloudflare3.png)
+![cloudflare域名转DNS设置界面](./img/srv/cloudflare3.webp)
 
 点击添加记录
 
-![cloudflareDNS设置界面](./img/srv/cloudflare4.png)
+![cloudflareDNS设置界面](./img/srv/cloudflare4.webp)
 
 输入以下内容
 
@@ -52,11 +52,11 @@ SRV解析一般用于MCJAVA服务端隐藏端口连接服务器等，此教程�
  - 端口：12345
  - 目标：bj.frp.one
 
-![cloudflareDNS添加记录界面](./img/srv/cloudflare5.png)
+![cloudflareDNS添加记录界面](./img/srv/cloudflare5.webp)
 
 点击右下角的保存
 
-![cloudflareDNS添加记录保存](./img/srv/cloudflare6.png)
+![cloudflareDNS添加记录保存](./img/srv/cloudflare6.webp)
 
 等待其生效即可
 

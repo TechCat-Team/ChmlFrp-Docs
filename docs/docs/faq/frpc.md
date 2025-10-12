@@ -8,7 +8,7 @@
  - 节点被攻击
  - 节点已废弃
 
-![无法连接至服务器: i/o deadline reached报错截图](./img/frpc/1.png)
+![无法连接至服务器: i/o deadline reached报错截图](./img/frpc/1.webp)
 
 **解决方法为更换节点**，可以前往[ChmlFrp监控](https://panel.chmlfrp.cn/tunnel/status)查看节点状态。
 
@@ -29,7 +29,7 @@
 ### already exist  
 如果软件出现此提示 则代表隧道端口被占用  
 
-![already exist报错截图](./img/frpc/2.png)
+![already exist报错截图](./img/frpc/2.webp)
 
 这通常是因为同一条隧道同时多次启动  
 解决方法：
@@ -39,7 +39,7 @@
 
 ## connect to local service
 
-![connect to local service报错截图](./img/frpc/3.png)
+![connect to local service报错截图](./img/frpc/3.webp)
 
 如果软件出现此提示 代表您隧道内网端口无软件支持
 

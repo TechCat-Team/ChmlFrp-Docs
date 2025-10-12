@@ -9,22 +9,22 @@
 shell:Common Startup
 ```
 
-![运行](./img/autostart/1.png)
+![运行](./img/autostart/1.webp)
 
 点击确定
 弹出的文件夹就是系统启动文件夹
 
-![文件夹](./img/autostart/2.png)
+![文件夹](./img/autostart/2.webp)
 
 回到frp文件夹
 
-![frp文件夹](./img/autostart/3.png)
+![frp文件夹](./img/autostart/3.webp)
 
 新建文本文档
 修改文件后缀词.txt为.bat
 确认更改
 
-![修改后缀词](./img/autostart/4.png)
+![修改后缀词](./img/autostart/4.webp)
 
 右键，点击编辑
 输入以下代码
@@ -36,14 +36,14 @@ pause
 
 注：frpc.exe是启动FRPC pause是为了方便检修看日志
 
-![修改文件](./img/autostart/5.png)
+![修改文件](./img/autostart/5.webp)
 
 保存，关闭文件
 
 右键.bat文件 创建快捷方式
 将快捷方式剪切到"启动"文件夹（可能要提供管理员权限）
 
-![启动文件夹](./img/autostart/5.png)
+![启动文件夹](./img/autostart/5.webp)
 
 重启电脑
 frp就成功开机启动了

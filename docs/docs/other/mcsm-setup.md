@@ -10,24 +10,24 @@
 然后 用浏览器打开[MCSM官方](https://mcsmanager.com/)网址
 点击中央的"下载"
 
-![MCSMguanwang](./img/mcsm-setup/mcsmgw.png)
+![MCSMguanwang](./img/mcsm-setup/mcsmgw.webp)
 
 点击"下载安装包"
 
-![MCSMguanwangxiazai](./img/mcsm-setup/mcsmgwxz.png)
+![MCSMguanwangxiazai](./img/mcsm-setup/mcsmgwxz.webp)
 
 选择Windows版本
 
-![MCSMguanwangxiazaibanben](./img/mcsm-setup/mcsmgwxzbb.png)
+![MCSMguanwangxiazaibanben](./img/mcsm-setup/mcsmgwxzbb.webp)
 
 点击下载
 
-![MCSMguanwangxiazaibanbenxiazai](./img/mcsm-setup/mcsmgwxzbbxz.png)
+![MCSMguanwangxiazaibanbenxiazai](./img/mcsm-setup/mcsmgwxzbbxz.webp)
 
 将压缩包解压成文件夹
 将其打开
 
-![MCSMwenjianjia](./img/mcsm-setup/mcsmwjj.png)
+![MCSMwenjianjia](./img/mcsm-setup/mcsmwjj.webp)
 
 其中分为daemon和web文件夹
 daemon是守护进程 管理服务器的
@@ -37,7 +37,7 @@ web是面板 是供用户使用的
 回到上一目录
 双击start.bat启动面板及守护进程
 
-![MCSMbatjietu](./img/mcsm-setup/mcsmbatjt.png)
+![MCSMbatjietu](./img/mcsm-setup/mcsmbatjt.webp)
 
 （图中 左为web 右为daemon）
 当你第一次启动时 它默认是英文 当你用浏览器（设置语言为中文的）访问后 自动变为中文
@@ -50,14 +50,14 @@ web是面板 是供用户使用的
 
 当你成功连上后 应该是这个页面
 
-![MCSMscsy](./img/mcsm-setup/mcsmscsy.png)
+![MCSMscsy](./img/mcsm-setup/mcsmscsy.webp)
 
 点击中央的"开始使用"
 
 输入仅你知道的账号和密码
 
-![MCSMzm](./img/mcsm-setup/mcsmzm.png)
+![MCSMzm](./img/mcsm-setup/mcsmzm.webp)
 
 然后跟着他的引导就可以创建属于你的第一个实例了
 
-![MCSMyd](./img/mcsm-setup/mcsmyd.png)
+![MCSMyd](./img/mcsm-setup/mcsmyd.webp)

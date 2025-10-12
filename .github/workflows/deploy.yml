@@ -30,13 +30,13 @@ jobs:
       run: pnpm docs:build
       
     - name: List build files
-      run: ls -la .vitepress/dist/
+      run: ls -la docs/.vitepress/dist/
       
     - name: Upload build artifacts
       uses: actions/upload-artifact@v4
       with:
         name: vitepress-build
-        path: .vitepress/dist/
+        path: docs/.vitepress/dist/
         retention-days: 1
 
   deploy:

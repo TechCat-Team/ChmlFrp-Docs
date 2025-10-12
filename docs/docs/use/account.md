@@ -2,7 +2,7 @@
 
 ## 注册账户
 
-首先进入[V3网页控制台](https://panel.chmlfrp.cn/sign)
+首先进入[网页控制台](https://panel.chmlfrp.cn/sign)
 
 ![zhuce1](./img/account/reg1.webp)
 
@@ -24,7 +24,7 @@
 
 ## 注销账户
 
-首先 正常登录到[V3网页控制台](https://panel.chmlfrp.cn/home)
+首先 正常登录到[网页控制台](https://panel.chmlfrp.cn/home)
 
 ![logout1](./img/account/logout1.webp)
 

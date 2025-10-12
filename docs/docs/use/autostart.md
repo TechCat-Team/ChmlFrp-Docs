@@ -18,13 +18,13 @@ shell:Common Startup
 
 回到frp文件夹
 
-![frp文件夹](./img/autostart/3.webp)
+![frp文件夹](./img/autostart/6.webp)
 
 新建文本文档
 修改文件后缀词.txt为.bat
 确认更改
 
-![修改后缀词](./img/autostart/4.webp)
+![修改后缀词](./img/autostart/3.webp)
 
 右键，点击编辑
 输入以下代码
@@ -34,9 +34,9 @@ frpc.exe
 pause
 ```
 
-注：frpc.exe是启动FRPC pause是为了方便检修看日志
+注：frpc.exe是启动FRPC pause是为了方便检修看日志 可以不加pause的
 
-![修改文件](./img/autostart/5.webp)
+![修改文件](./img/autostart/4.webp)
 
 保存，关闭文件
 

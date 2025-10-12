@@ -54,6 +54,16 @@ jobs:
     - name: List downloaded files
       run: ls -la ./dist/
       
+    - name: Upload files to VPS
+      uses: appleboy/scp-action@v0.1.7
+      with:
+        host: ${{ secrets.VPS_HOST }}
+        username: ${{ secrets.VPS_USERNAME }}
+        key: ${{ secrets.VPS_SSH_KEY }}
+        source: "./dist/*"
+        target: "/tmp/vitepress-deploy/"
+        strip_components: 1
+        
     - name: Deploy to VPS
       uses: appleboy/ssh-action@v1
       with:
@@ -65,10 +75,12 @@ jobs:
           
           sudo rm -rf /www/wwwroot/docs.chmlfrp.cn/*
           
-          sudo cp -r /tmp/dist/* /www/wwwroot/docs.chmlfrp.cn/ 2>/dev/null || true
+          sudo cp -r /tmp/vitepress-deploy/* /www/wwwroot/docs.chmlfrp.cn/
           
-          sudo chown -R www:www /www/wwwroot/docs.chmlfrp.cn/ 2>/dev/null || sudo chown -R www-data:www-data /www/wwwroot/docs.chmlfrp.cn/
-          sudo find /www/wwwroot/docs.chmlfrp.cn -type f -exec chmod 644 {} \;
-          sudo find /www/wwwroot/docs.chmlfrp.cn -type d -exec chmod 755 {} \;
+          sudo chown -R www:www /www/wwwroot/docs.chmlfrp.cn/ 2>/dev/null || sudo chown -R www-data:www-data /www/wwwroot/docs.chmlfrp.cn/ 2>/dev/null || true
+          sudo find /www/wwwroot/docs.chmlfrp.cn -type f -exec chmod 644 {} \; 2>/dev/null || true
+          sudo find /www/wwwroot/docs.chmlfrp.cn -type d -exec chmod 755 {} \; 2>/dev/null || true
+          
+          sudo rm -rf /tmp/vitepress-deploy
           
           echo "✅ ChmlFrp 文档自动部署完成！"

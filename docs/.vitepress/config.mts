@@ -150,6 +150,12 @@ export default defineConfig({
               ],
             },
             {
+              text: 'NAS启动',
+              items: [
+                { text: '飞牛NAS', link: '/docs/nas/fnOS' },
+              ],
+            },
+            {
               text: '其他教程',
               items: [
                 { text: 'MC 外置登录', link: '/docs/other/mc-login' },

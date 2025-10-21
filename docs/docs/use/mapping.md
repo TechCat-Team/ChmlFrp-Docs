@@ -94,11 +94,9 @@ A:
 > **🎉 恭喜！**  
 > 您的内网穿透隧道已创建成功，外网地址就是连接地址。
 
-## 第二步：启动隧道
+## Windows系统启动
 
-### 2.1 Windows系统启动
-
-#### 下载frpc客户端
+### 下载frpc客户端
 
 1. **访问下载页面**
    - 打开 [ChmlFrp软件下载页面](https://panel.chmlfrp.cn/tunnel/download)
@@ -120,7 +118,7 @@ A:
 ![解压截图](./img/mapping/windowsfrpc2.webp)
 ![文件夹截图](./img/mapping/windowsfrpc3.webp)
 
-#### 配置frpc
+### 配置frpc
 
 1. **准备配置文件**
    - 双击打开 `frpc.ini` 文件（备用）
@@ -142,7 +140,7 @@ A:
 
 ![frpc.ini文件截图](./img/mapping/windowsfrpc6.webp)
 
-#### 启动隧道
+### 启动隧道
 
 1. **打开命令提示符**
    - 在文件夹地址栏输入 `cmd` 并回车
@@ -157,9 +155,9 @@ A:
 > **🎉 启动成功！**  
 > 当看到"映射启动成功"提示时，您的隧道已成功启动，可以通过外网地址访问您的服务。
 
-### 2.2 Linux系统启动
+## Linux系统启动
 
-#### 连接服务器
+### 连接服务器
 
 1. **SSH连接**
    - 使用SSH客户端连接到您的Linux服务器
@@ -167,7 +165,7 @@ A:
 
 ![SSH截图](./img/mapping/12.webp)
 
-#### 下载frpc客户端
+### 下载frpc客户端
 
 1. **下载客户端**
    - 根据您的系统架构下载对应版本
@@ -206,7 +204,7 @@ wget https://chmlfrp.cn/dw/ChmlFrp-0.51.2_linux_amd64.tar.gz
 
 ![linux下载chmlfrp客户端截图](./img/mapping/15.webp)
 
-#### 解压和配置
+### 解压和配置
 
 1. **解压文件**
    - 解压下载的tar.gz包
@@ -257,7 +255,7 @@ vi frpc.ini
 
 ![粘贴配置文件后的截图](./img/mapping/18.webp)
 
-#### 启动隧道
+### 启动隧道
 
 1. **测试启动**
    - 使用以下命令测试隧道是否能正常启动
@@ -284,9 +282,9 @@ nohup ./frpc -c frpc.ini >/dev/null 2>&1 &
 > **🎉 启动成功！**  
 > 当看到"映射启动成功"提示时，您的隧道已成功启动，可以通过外网地址访问您的服务。
 
-### 2.3 macOS系统启动
+## macOS系统启动
 
-#### 下载frpc客户端
+### 下载frpc客户端
 
 1. **访问下载页面**
    - 打开 [ChmlFrp软件下载页面](https://panel.chmlfrp.cn/tunnel/download)
@@ -303,7 +301,7 @@ nohup ./frpc -c frpc.ini >/dev/null 2>&1 &
 
 ![解压缩后的文件夹](./img/mapping/mac2.webp)
 
-#### 配置frpc
+### 配置frpc
 
 1. **获取配置文件**
    - 访问 [ChmlFrp控制面板](https://panel.chmlfrp.cn)
@@ -322,7 +320,7 @@ nohup ./frpc -c frpc.ini >/dev/null 2>&1 &
 
 ![frpc.ini文件内](./img/mapping/mac4.webp)
 
-#### 启动隧道
+### 启动隧道
 
 1. **打开终端**
    - 打开macOS终端应用

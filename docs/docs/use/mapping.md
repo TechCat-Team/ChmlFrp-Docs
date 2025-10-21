@@ -1,246 +1,384 @@
-# ChmlFrp使用教程
+# ChmlFrp 端口映射教程
 
-此篇介绍了Windows Linux等客户端的使用教程，包含了‘创建隧道/启动隧道’等基础教程。并不包含MC开服这类教程。
+本教程将指导您如何使用ChmlFrp进行端口映射，包括创建隧道和在不同操作系统上启动隧道的完整流程。
 
+## 前置条件
 
-Q/A
+在开始之前，请确保您已具备以下条件：
 
- - 如何启动多个隧道：(如果是不同的节点，启动多个frpc软件即可。如果是相同的节点，重新获取配置文件，配置文件默认启动此节点的所有隧道，然后剪切进frpc.ini再重启即可。)
+- ✅ 已注册ChmlFrp账号并完成实名认证
+- ✅ 了解基本的网络概念（端口、IP地址等）
+- ✅ 已安装对应操作系统的frpc客户端
+- ✅ 了解您要映射的服务的端口信息
 
-## 视频教程
+## 快速开始
+
+### 视频教程
 
 [【ChmlFrp V3版食用教程】 —— UP:MilkyMay5201314](https://www.bilibili.com/video/BV13wewz8EBN)
 
-## 图文教程
+### 常见问题
 
-### 创建隧道
+**Q: 如何启动多个隧道？**  
+A: 
+- 如果是不同的节点：启动多个frpc软件即可
+- 如果是相同的节点：重新获取配置文件，配置文件默认启动此节点的所有隧道，然后剪切进frpc.ini再重启即可
 
-请先访问[Chmlfrp官网(https://chmlfrp.cn)](https://chmlfrp.cn)
+## 第一步：创建隧道
 
-进入以后 请点击下方的"管理面板"
+### 1.1 登录控制台
 
-![首页截图](./img/mapping//1.webp)
+1. **访问官网**
+   - 打开 [ChmlFrp官网](https://chmlfrp.cn)
+   - 点击"管理面板"按钮
 
-如果您没有账户，则需要注册
+![首页截图](./img/mapping/1.webp)
 
-![注册截图](./img/mapping//2.webp)
+2. **注册/登录账户**
+   - 如果没有账户，请先注册
+   - 已有账户可直接登录
 
-![注册详情截图](./img/mapping//20.webp)
+![注册截图](./img/mapping/2.webp)
+![注册详情截图](./img/mapping/20.webp)
+![登录截图](./img/mapping/3.webp)
 
-已有账户可直接登录
+3. **完成实名认证**
+   - 如果未实名认证，主页会显示"您尚未实名"
+   - 点击实名提示框完成实名认证
 
-![登录截图](./img/mapping//3.webp)
+![实名认证提示截图](./img/mapping/21.webp)
 
-如果您没有实名认证，主页会标注"您尚未实名"，点击实名提示框即可跳转至实名认证页面。
+### 1.2 创建隧道
 
-![实名认证提示截图](./img/mapping//21.webp)
+1. **进入隧道管理**
+   - 实名认证后，依次点击"隧道管理" → "隧道列表"
+   - 点击右上角"添加隧道"
 
-如果您已实名，进入控制面板后请依次点击 "隧道管理" "隧道列表"
+![主页面截图](./img/mapping/4.webp)
+![添加隧道截图](./img/mapping/5.webp)
 
-![主页面截图](./img/mapping//4.webp)
+2. **选择节点**
+   - 根据您的需求选择合适的节点
+   - 查看节点信息，包括节点的介绍、负载等
 
-点击右上角"添加隧道"
+![节点选择截图](./img/mapping/6.webp)
+![节点选择信息截图](./img/mapping/22.webp)
 
-![添加隧道截图](./img/mapping//5.webp)
+3. **配置隧道参数**
+   - 点击"继续"进入配置页面
+   - 填写以下信息：
 
-选择一个节点
+![创建隧道截图](./img/mapping/7.webp)
 
-![节点选择截图](./img/mapping//6.webp)
+| 配置项 | 说明 | 示例 |
+|--------|------|------|
+| **隧道名称** | 隧道的名字，可以自定义 | `my-tunnel` |
+| **本地IP** | 要映射的本地IP地址 | `127.0.0.1`（本机） |
+| **端口类型** | 协议类型 | `TCP`、`UDP`、`HTTP`、`HTTPS` |
+| **内网端口** | 本地服务端口号 | `8080`、`25565`等 |
+| **外网端口** | 外网访问端口号 | 自定义（避免重复） |
 
-这里会显示该节点的所有需要信息
+> **💡 配置说明**  
+> - **本地IP**：本机使用`127.0.0.1`，局域网其他机器使用该机器的内网IP
+> - **端口类型**：HTTP/HTTPS用于网页服务，TCP/UDP用于游戏等
+> - **HTTPS**：需要自备SSL证书并配置好
+> - **高级设置**：非必要不建议修改
+> - **特别提醒**：如果您使用了中国境内节点，映射任何网页服务，您都需要解析自己的已备案域名，并且通过自己的域名访问。
 
-![节点选择信息截图](./img/mapping//22.webp)
+4. **完成创建**
+   - 检查配置无误后点击"确定"
+   - 隧道创建成功后，系统会显示外网连接地址
 
-点击继续
+![录入节点截图](./img/mapping/8.webp)
 
-输入您的隧道信息
+> **🎉 恭喜！**  
+> 您的内网穿透隧道已创建成功，外网地址就是连接地址。
 
-![创建隧道截图](./img/mapping//7.webp)
+## 第二步：启动隧道
 
- - 隧道名称也就是隧道ID 非必要不建议动(此ID为该节点公用，并非单您账户使用)
- - 本地IP就是你要映射的本地IP 一般为127.0.0.1,也就是本机(如给局域网其他机器使用，请填写该机器的内网IP地址)
- - 节点选择就是你刚刚选择的节点
- - 端口类型可以选一下你要什么协议 例：TCP UDP HTTP HTTPS(HTTPS需您自备SSL证书并配置好)
- - 内网端口就是你要映射的本地端口号(非0)
- - 外网端口是映射后的外网端口号(为该节点公用，重复请输入其他端口号)
- - 高级设置 非必要不建议动
+### 2.1 Windows系统启动
 
-![录入节点截图](./img/mapping//8.webp)
+#### 下载frpc客户端
 
-当出现这个提示时
-这样 你的内网穿透隧道就创建好了
-你的映射后外网地址就是链接地址
+1. **访问下载页面**
+   - 打开 [ChmlFrp软件下载页面](https://panel.chmlfrp.cn/tunnel/download)
+   - 选择Windows版本
 
-## Windows 启动隧道(FRPC)
+![软件下载截图](./img/mapping/windowsfrpc1.webp)
 
-### Windows frpc下载
+2. **选择正确的版本**
+   - **64位系统**：选择 `amd64` 版本
+   - **32位系统**：选择 `386` 版本
 
-首先进入到你的服务器中 用网页打开[chmlfrp官网中的软件下载](https://panel.chmlfrp.cn/tunnel/download)界面
+> **💡 如何查看系统位数**  
+> 右键"此电脑" → "属性"，在"系统类型"中查看操作系统位数
 
-![软件下载截图](./img/mapping//windowsfrpc1.webp)
+3. **下载并解压**
+   - 下载完成后解压压缩包
+   - 进入解压后的文件夹
 
-如果你是64位操作系统 请选择 amd64 版本
-如果你是32位操作系统 请选择 386 版本
+![解压截图](./img/mapping/windowsfrpc2.webp)
+![文件夹截图](./img/mapping/windowsfrpc3.webp)
 
-右键此电脑->属性 在系统类型里会写xx位操作系统 基于xxx的处理器
+#### 配置frpc
 
-当你下载完成后 请解压压缩包成文件夹
+1. **准备配置文件**
+   - 双击打开 `frpc.ini` 文件（备用）
 
-![解压截图](./img/mapping//windowsfrpc2.webp)
+![frpcini截图](./img/mapping/windowsfrpc4.webp)
 
-双击**"ChmlFrp-x.x.x_windows_amd64"**文件夹，进入到相应目录
+2. **获取配置文件**
+   - 打开 [ChmlFrp配置文件页面](https://panel.chmlfrp.cn/tunnel/config)
+   - 依次进行以下操作：
+     - 选择要映射的隧道节点
+     - 点击"生成配置文件"
+     - 复制配置文件内容
 
-![文件夹截图](./img/mapping//windowsfrpc3.webp)
+![浏览器配置文件页面截图](./img/mapping/windowsfrpc5.webp)
 
-双击打开frpc.ini文件备用
+3. **配置frpc.ini**
+   - 将复制的配置文件粘贴到 `frpc.ini` 文件中
+   - 按 **Ctrl+S** 保存文件
 
-![frpcini截图](./img/mapping//windowsfrpc4.webp)
+![frpc.ini文件截图](./img/mapping/windowsfrpc6.webp)
 
-回到浏览器 打开[Chmlfrp配置文件](https://panel.chmlfrp.cn/tunnel/config)页面
+#### 启动隧道
 
-![浏览器配置文件页面截图](./img/mapping//windowsfrpc5.webp)
+1. **打开命令提示符**
+   - 在文件夹地址栏输入 `cmd` 并回车
+   - 使用当前地址打开命令提示符
 
-依次进行
+2. **启动frpc**
+   - 输入 `frpc.exe` 启动客户端
+   - 等待出现"映射启动成功, 感谢您使用ChmlFrp!"提示
 
-- 选择你要映射的隧道的节点
-- 点击生成配置文件
-- 复制配置文件
+![CMD启动截图](./img/mapping/windowsfrpc7.webp)
 
-回到frpc.ini页面
+> **🎉 启动成功！**  
+> 当看到"映射启动成功"提示时，您的隧道已成功启动，可以通过外网地址访问您的服务。
 
-将刚刚复制的配置文件粘贴进frpc.ini
-保存frpc.ini文件
+### 2.2 Linux系统启动
 
-![frpc.ini文件截图](./img/mapping//windowsfrpc6.webp)
+#### 连接服务器
 
-在地址栏输入cmd 用当前地址打开命令提示符
-
-输入frpc.exe 打开frpc
-
-![CMD启动截图](./img/mapping//windowsfrpc7.webp)
-
-等待他出现上图的"映射启动成功, 感谢您使用ChmlFrp!"就启动成功了
-
-## Linux 启动隧道(FRPC)
-
-首先进入到您的Linux服务器，这里以Centos 7.9为例
+1. **SSH连接**
+   - 使用SSH客户端连接到您的Linux服务器
+   - 这里以CentOS 7.9为例
 
 ![SSH截图](./img/mapping/12.webp)
 
-然后wget下载最新版本的映射软件。请下载对应的指令集，如果您是amd64架构，则下载amd64。这里以amd64为例。
+#### 下载frpc客户端
 
-**示例代码**
+1. **下载客户端**
+   - 根据您的系统架构下载对应版本
+   - 这里以amd64架构为例
+
 ```shell
 wget https://chmlfrp.cn/dw/ChmlFrp-0.51.2_linux_amd64.tar.gz
 ```
 
-![wget代码截图](./img/mapping//13.webp)
+![wget代码截图](./img/mapping/13.webp)
 
-如果提示-bash: wget: command not found（如上图），则输入以下指令。如果没有则跳过这一步。
+2. **安装wget（如需要）**
+   - 如果提示"wget: command not found"，请先安装wget
 
-**Centos**
+**CentOS系统：**
 ```shell
 yum install wget
 ```
-**Ubuntu**
+
+**Ubuntu系统：**
 ```shell
 sudo apt-get install wget
 ```
 
-等待安装完wget，如果中途出现"Is this ok [y/d/N]:"直接输入y然后回车即可。
+> **💡 安装提示**  
+> 如果出现"Is this ok [y/d/N]:"，直接输入 `y` 然后回车即可。
 
-![wget安装时截图](./img/mapping//14.webp)
+![wget安装时截图](./img/mapping/14.webp)
 
-直到出现"Complete!"则代表安装完成。部分ssh终端为自动翻译为"完毕!"。安装好wget后继续执行(已经执行过一次的不用继续执行)
+3. **重新下载（如需要）**
+   - 安装wget后，重新执行下载命令
 
 ```shell
 wget https://chmlfrp.cn/dw/ChmlFrp-0.51.2_linux_amd64.tar.gz
 ```
 
-![linux下载chmlfrp客户端截图](./img/mapping//15.webp)
+![linux下载chmlfrp客户端截图](./img/mapping/15.webp)
 
-如上图，这样即为下载成功。如果下载失败，可手动下载后上传至服务器。
+#### 解压和配置
 
-接着输入以下指令解压tar.gz包(**注,如果您下载的版本不一样,-zxf后面的名字也不一样,替换为你下载的文件名即可。**)：
+1. **解压文件**
+   - 解压下载的tar.gz包
 
 ```shell
 tar -zxf ChmlFrp-0.51.2_linux_amd64.tar.gz
 ```
 
-解压后输入ls，即可看见此目录下的文件，可以看见解压后的文件为**frp_ChmlFrp-0.51.2_linux_amd64**，则输入cd指令进入到解压后的文件夹内
+2. **进入目录**
+   - 查看解压后的文件
+   - 进入frpc目录
 
 ```shell
+ls
 cd frp_ChmlFrp-0.51.2_linux_amd64
 ```
 
-![进入到解压后的文件夹截图](./img/mapping//16.webp)
+![进入到解压后的文件夹截图](./img/mapping/16.webp)
 
-随后进入到ChmlFrp_Panel控制面板，俗称chmlfrp网站，依次点击"隧道管理"  "配置文件"，选择节点(注意!这里**只有创建过隧道才会让你选择，否则为空白**)获取配置文件
+3. **获取配置文件**
+   - 访问 [ChmlFrp控制面板](https://panel.chmlfrp.cn)
+   - 依次点击"隧道管理" → "配置文件"
+   - 选择节点并生成配置文件
 
-![获取配置文件截图](./img/mapping//17.webp)
+> **⚠️ 注意**  
+> 只有创建过隧道才能选择节点，否则列表为空。
 
-然后回到到Linux，输入以下指令修改frpc.ini文件。
+![获取配置文件截图](./img/mapping/17.webp)
+
+4. **编辑配置文件**
+   - 使用vi编辑器打开frpc.ini文件
 
 ```shell
 vi frpc.ini
 ```
 
-进入到linux的文档编辑工具后，按**i**启动编辑(不按则无法编辑文件)，删除原来的内容，把从网站获取的配置文件粘贴进去
+5. **编辑配置内容**
+   - 按 `i` 键进入编辑模式
+   - 删除原有内容，粘贴从网站获取的配置
+   - 按 `ESC` 键退出编辑模式
+   - 输入 `:wq` 保存并退出
 
-ssh终端的粘贴方法可能为：
-- 右键粘贴
-- Ctrl+V粘贴
-- Ctrl+Shift+V粘贴
-您需要选择适合您ssh终端的方法
+> **💡 SSH粘贴方法**  
+> 不同SSH客户端粘贴方法可能不同：
+> - 右键粘贴
+> - Ctrl+V粘贴  
+> - Ctrl+Shift+V粘贴
 
-![粘贴配置文件后的截图](./img/mapping//18.webp)
+![粘贴配置文件后的截图](./img/mapping/18.webp)
 
-粘贴进去后按键盘上的**ESC**，进入指令模式。然后输入**:wq**(注意！需要全小写的:wq，必须要带':')后回车，即可保存文件并返回到主目录。
+#### 启动隧道
 
-然后使用./frpc -c frpc.ini指令检查是否能正常启动隧道
+1. **测试启动**
+   - 使用以下命令测试隧道是否能正常启动
 
-![启动隧道截图](./img/mapping//19.webp)
+```shell
+./frpc -c frpc.ini
+```
 
-如果出现"映射启动成功"，则代表frp已正常启动。**在这个时候就已经启动好了，但是关掉ssh终端后映射会自动结束**。
+![启动隧道截图](./img/mapping/19.webp)
 
-如果需要在后台运行FRPC(映射)，则需要使用后台执行指令。
-
-首先按Ctrl+C结束运行frpc(映射)，然后输入以下指令：
+2. **后台运行（推荐）**
+   - 按 `Ctrl+C` 停止当前运行
+   - 使用后台运行命令
 
 ```shell
 nohup ./frpc -c frpc.ini >/dev/null 2>&1 &
 ```
 
-如果出现类似："[1] 16047"，则代表后台启动成功。16047为进程ID，这串数字每人都不一样，如果需要结束frpc(映射)进程，输入**kill 16047**即可。
+> **💡 后台运行说明**  
+> - 出现类似"[1] 16047"的提示表示后台启动成功
+> - 16047为进程ID，每个人的数字都不同
+> - 如需结束进程，使用 `kill 16047` 命令
 
-## Mac OS 启动隧道(FRPC)
+> **🎉 启动成功！**  
+> 当看到"映射启动成功"提示时，您的隧道已成功启动，可以通过外网地址访问您的服务。
 
-首先登录到你的MAC电脑中，用浏览器打开chmlfrp官网中的软件下载界面。系统选择Darwin，选择对应架构的软件下载(例如m4芯片为arm64，英特尔芯片为amd64)。
+### 2.3 macOS系统启动
 
-![ChmlFrp下载页面](./img/mapping//mac1.webp)
+#### 下载frpc客户端
 
-下载完成后解压缩，并进入到解压后的文件夹内
+1. **访问下载页面**
+   - 打开 [ChmlFrp软件下载页面](https://panel.chmlfrp.cn/tunnel/download)
+   - 系统选择 `Darwin`
+   - 根据您的Mac芯片选择对应架构：
+     - **M1/M2芯片**：选择 `arm64`
+     - **英特尔芯片**：选择 `amd64`
 
-![解压缩后的文件夹](./img/mapping//mac2.webp)
+![ChmlFrp下载页面](./img/mapping/mac1.webp)
 
-回到ChmlFrp网页中，前往配置文件页面，生成你要启动的配置文件。复制配置文件后回到文件夹页面，右键frpc.ini，随后通过文本编辑器打开frpc.ini
+2. **下载并解压**
+   - 下载完成后解压缩文件
+   - 进入解压后的文件夹
 
-![MAC打开frpc.ini文件夹](./img/mapping//mac3.webp)
+![解压缩后的文件夹](./img/mapping/mac2.webp)
 
-打开后，把从ChmlFrp获取的配置文件粘贴进frpc.ini文件内
+#### 配置frpc
 
-![frpc.ini文件内](./img/mapping//mac4.webp)
+1. **获取配置文件**
+   - 访问 [ChmlFrp控制面板](https://panel.chmlfrp.cn)
+   - 前往"隧道管理" → "配置文件"页面
+   - 生成要启动的配置文件并复制
 
-随后保存文件，打开mac终端，输入
+2. **编辑配置文件**
+   - 右键点击 `frpc.ini` 文件
+   - 选择"打开方式" → "文本编辑器"
+
+![MAC打开frpc.ini文件夹](./img/mapping/mac3.webp)
+
+3. **粘贴配置内容**
+   - 将复制的配置文件粘贴到 `frpc.ini` 文件中
+   - 保存文件
+
+![frpc.ini文件内](./img/mapping/mac4.webp)
+
+#### 启动隧道
+
+1. **打开终端**
+   - 打开macOS终端应用
+   - 进入ChmlFrp文件夹
+
 ```shell
 cd 解压后的ChmlFrp文件夹路径
 ```
-然后回车，进入到ChmlFrp文件夹，再使用
+
+2. **启动frpc**
+   - 使用以下命令启动客户端
+
 ```shell
 ./frpc
 ```
-指令启动ChmlFrp
 
-![frpc.ini](./img/mapping//mac5.webp)
+![frpc.ini](./img/mapping/mac5.webp)
 
-**至此，ChmlFrp启动完成**
+> **🎉 启动完成！**  
+> 当看到"映射启动成功"提示时，您的隧道已成功启动，可以通过外网地址访问您的服务。
+
+## 故障排除
+
+### 常见问题
+
+**Q: 隧道启动失败？**  
+A: 请检查以下几点：
+- 配置文件是否正确
+- 网络连接是否正常
+- 本地服务是否正在运行
+- 端口是否被其他程序占用
+
+**Q: 无法访问外网地址？**  
+A: 请确认：
+- 隧道状态显示为"在线"
+- 本地服务正在运行
+- 防火墙没有阻止相关端口
+- 外网地址输入正确
+
+**Q: 配置文件格式错误？**  
+A: 请确保：
+- 配置文件使用UTF-8编码保存
+- 没有多余的空格或特殊字符
+- 配置内容完整且格式正确
+- 节点选择正确
+
+**Q: Linux后台运行失败？**  
+A: 请尝试：
+- 检查进程是否正在运行：`ps aux | grep frpc`
+- 查看日志文件：`cat nohup.out`
+- 重新启动：`kill 进程ID` 然后重新运行
+
+### 获取帮助
+
+如果遇到其他问题，您可以：
+- 查看ChmlFrp官方文档
+- 联系技术支持
+- 在社区群寻求帮助
+- 查看视频教程获取更多帮助

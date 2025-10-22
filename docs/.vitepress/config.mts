@@ -20,7 +20,8 @@ export default defineConfig({
           { text: 'v1 版本', link: '/API/v1/' },
           { text: 'v2 版本', link: '/API/v2/' }
         ]
-      }
+      },
+      { text: '条款与政策', link: '/terms/' }
     ],
 
     // 添加侧边栏配置
@@ -185,6 +186,17 @@ export default defineConfig({
             },
           ],
         },
+      ],
+      '/terms/': [
+        {
+          text: '条款与政策',
+          items: [
+            { text: '条款首页', link: '/terms/' },
+            { text: '服务条款', link: '/terms/terms-of-service' },
+            { text: '隐私政策', link: '/terms/privacy-policy' },
+            { text: '免责声明', link: '/terms/disclaimer' }
+          ]
+        }
       ]
     },
 

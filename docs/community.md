@@ -57,9 +57,8 @@ editLink: true
       <div class="wechat-group-title">微信一群</div>
     </div>
     <div class="wechat-group-body">
-    我们暂无微信群，预计未来开放
-      <!-- <p>扫码加入TechCat企业微信群</p> -->
-      <!-- <img src="/path/to/wechat-qr1.png" alt="微信群二维码" width="150"> -->
+      <p>扫码加入ChmlFrp企业微信群。如果二维码失效，可以点击链接添加微信好友邀请入群：<a href="https://work.weixin.qq.com/ca/cawcde0ba6274c0b7d">https://work.weixin.qq.com/ca/cawcde0ba6274c0b7d</a></p>
+      <img src="/img/1.png" alt="微信群二维码" width="150">
     </div>
   </div>
 </ClientOnly>

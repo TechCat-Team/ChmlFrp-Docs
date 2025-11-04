@@ -65,6 +65,45 @@ editLink: true
 
 </div>
 
+## 📧 联系邮箱
+
+<div class="qq-group-container">
+
+<ClientOnly>
+  <div class="qq-group-card">
+    <div class="qq-group-header">
+      <div class="qq-group-title">服务使用与技术支持</div>
+    </div>
+    <div class="qq-group-body">
+      <p>对于服务使用中的一般性问题、技术故障或账户咨询，请通过 <code>support@chcat.cn</code> 联系我们</p>
+    </div>
+  </div>
+</ClientOnly>
+
+<ClientOnly>
+  <div class="qq-group-card">
+    <div class="qq-group-header">
+      <div class="qq-group-title">违规与滥用行为举报</div>
+    </div>
+    <div class="qq-group-body">
+      <p>如果您发现任何用户存在违反服务条款的行为（如发布非法信息、进行网络攻击等），请通过 <code>abuse@chcat.cn</code> 向我们举报，并请提供尽可能详细的证据（如违规URL、截图、时间等）</p>
+    </div>
+  </div>
+</ClientOnly>
+
+<ClientOnly>
+  <div class="qq-group-card">
+    <div class="qq-group-header">
+      <div class="qq-group-title">条款与法律事务</div>
+    </div>
+    <div class="qq-group-body">
+      <p>如果您对服务条款有任何疑问、异议或需要就法律相关事宜进行沟通，请通过 <code>legal@chcat.cn</code> 联系我们</p>
+    </div>
+  </div>
+</ClientOnly>
+
+</div>
+
 ## ❓ 加群须知
 1. 禁止非公益广告/刷屏/传播违法内容
 2. 技术问题优先在群内讨论

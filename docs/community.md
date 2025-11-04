@@ -54,11 +54,11 @@ editLink: true
 <ClientOnly>
   <div class="wechat-group-card">
     <div class="wechat-group-header">
-      <div class="wechat-group-title">微信一群</div>
+      <div class="wechat-group-title">微信群</div>
     </div>
     <div class="wechat-group-body">
-      <p>扫码加入ChmlFrp企业微信群。如果二维码失效，可以点击链接添加微信好友邀请入群：<a href="https://work.weixin.qq.com/ca/cawcde0ba6274c0b7d">https://work.weixin.qq.com/ca/cawcde0ba6274c0b7d</a></p>
-      <img src="/img/1.png" alt="微信群二维码" width="150">
+      <p>扫码加入ChmlFrp企业微信群（我们并不推荐通过此方式获取支持，如果需要更及时的响应，推荐加入qq群）</p>
+      <img src="/img/1.jpg" alt="微信群二维码" width="150">
     </div>
   </div>
 </ClientOnly>

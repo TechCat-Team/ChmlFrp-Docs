@@ -147,7 +147,6 @@ export default defineConfig({
               items: [
                 { text: '映射使用教程', link: '/docs/use/mapping' },
                 { text: '映射开机自启', link: '/docs/use/autostart' },
-                { text: '注册与注销账户', link: '/docs/use/account' }
               ],
             },
             {

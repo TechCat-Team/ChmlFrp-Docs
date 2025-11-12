@@ -20,13 +20,6 @@
       <p>选择合适的客户端版本</p>
     </div>
   </a>
-  <a class="group-card" href="/docs/use/account">
-    <div class="card-icon">👤</div>
-    <div class="card-content">
-      <h3>账户管理</h3>
-      <p>注册、登录、注销账户</p>
-    </div>
-  </a>
 </div>
 
 ## 🎮 游戏联机

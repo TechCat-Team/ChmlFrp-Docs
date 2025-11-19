@@ -172,7 +172,7 @@ A:
    - 这里以amd64架构为例
 
 ```shell
-wget https://chmlfrp.cn/dw/ChmlFrp-0.51.2_linux_amd64.tar.gz
+wget https://cf-v1.uapis.cn/download/ChmlFrp-0.51.2_251023_linux_amd64.tar.gz
 ```
 
 ![wget代码截图](./img/mapping/13.webp)
@@ -199,7 +199,7 @@ sudo apt-get install wget
    - 安装wget后，重新执行下载命令
 
 ```shell
-wget https://chmlfrp.cn/dw/ChmlFrp-0.51.2_linux_amd64.tar.gz
+wget https://cf-v1.uapis.cn/download/ChmlFrp-0.51.2_251023_linux_amd64.tar.gz
 ```
 
 ![linux下载chmlfrp客户端截图](./img/mapping/15.webp)
@@ -210,7 +210,7 @@ wget https://chmlfrp.cn/dw/ChmlFrp-0.51.2_linux_amd64.tar.gz
    - 解压下载的tar.gz包
 
 ```shell
-tar -zxf ChmlFrp-0.51.2_linux_amd64.tar.gz
+tar -zxf ChmlFrp-0.51.2_251023_linux_amd64.tar.gz
 ```
 
 2. **进入目录**
@@ -219,7 +219,7 @@ tar -zxf ChmlFrp-0.51.2_linux_amd64.tar.gz
 
 ```shell
 ls
-cd frp_ChmlFrp-0.51.2_linux_amd64
+cd frp_ChmlFrp-0.51.2_251023_linux_amd64
 ```
 
 ![进入到解压后的文件夹截图](./img/mapping/16.webp)

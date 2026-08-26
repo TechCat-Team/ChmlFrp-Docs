@@ -37,13 +37,8 @@ export default defineConfig({
             {
               text: '用户认证',
               items: [
-                { text: '登录', link: '/API/v2/User_Actions/login' },
                 { text: '用户信息', link: '/API/v2/User_Actions/userinfo' },
                 { text: '重置令牌', link: '/API/v2/User_Actions/retoken' },
-                { text: '重置密码', link: '/API/v2/User_Actions/reset_password' },
-                { text: '修改用户名', link: '/API/v2/User_Actions/update_username' },
-                { text: '修改QQ', link: '/API/v2/User_Actions/update_qq' },
-                { text: '重置头像', link: '/API/v2/User_Actions/update_userimg' },
                 { text: '获取消息', link: '/API/v2/User_Actions/messages' },
               ]
             },

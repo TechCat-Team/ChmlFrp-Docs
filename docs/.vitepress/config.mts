@@ -17,6 +17,7 @@ export default defineConfig({
     nav: [
       { text: '首页', link: '/' },
       { text: '使用文档', link: '/docs/' },
+      { text: '第三方文档', link: '/docs/third-party/' },
       {
         text: 'API文档',
         items: [
@@ -136,6 +137,14 @@ export default defineConfig({
             },
           ]
         }
+      ],
+      '/docs/third-party/': [
+        {
+          text: '第三方文档',
+          items: [
+            { text: '首页', link: '/docs/third-party/' },
+          ],
+        },
       ],
       '/docs/': [
         {

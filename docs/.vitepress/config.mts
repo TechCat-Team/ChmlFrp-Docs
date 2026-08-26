@@ -21,7 +21,6 @@ export default defineConfig({
       {
         text: 'API文档',
         items: [
-          { text: 'v1 版本', link: '/API/v1/' },
           { text: 'v2 版本', link: '/API/v2/' }
         ]
       },
@@ -30,56 +29,6 @@ export default defineConfig({
 
     // 添加侧边栏配置
     sidebar: {
-      '/API/v1/': [
-        {
-          text: 'API v1 文档',
-          items: [
-            { text: 'v1 介绍', link: '/API/v1/' },
-            {
-              text: '用户认证',
-              items: [
-                { text: '登录', link: '/API/v1/User_Actions/login' },
-                { text: '重置令牌', link: '/API/v1/User_Actions/resusertoken' },
-                { text: '签到信息', link: '/API/v1/User_Actions/qdxx' },
-                { text: '用户信息', link: '/API/v1/User_Actions/userinfo' },
-                { text: '用户流量消耗', link: '/API/v1/User_Actions/flow_zong' },
-                { text: '用户节点数据', link: '/API/v1/User_Actions/confignode' },
-                { text: '兑换码兑换', link: '/API/v1/User_Actions/giftcode' },
-              ]
-            },
-            {
-              text: '域名操作',
-              items: [
-                { text: '域名解析查询', link: '/API/v1/Domain_name_query/Domain_name_query' },
-              ]
-            },
-            {
-              text: '面板信息',
-              items: [
-                { text: '面板设置', link: '/API/v1/usersetup/usersetup' },
-                { text: '面板信息', link: '/API/v1/usersetup/sinfo' }
-              ]
-            },
-            {
-              text: '节点信息',
-              items: [
-                { text: '节点信息', link: '/API/v1/unode/unode' },
-              ]
-            },
-            {
-              text: '隧道操作',
-              items: [
-                { text: '用户隧道信息', link: '/API/v1/Tunnel_operations/usertunnel' },
-                { text: '隧道信息', link: '/API/v1/Tunnel_operations/tunnelinfo' },
-                { text: '新建隧道', link: '/API/v1/Tunnel_operations/tunnel' },
-                { text: '修改隧道', link: '/API/v1/Tunnel_operations/cztunnel' },
-                { text: '删除隧道', link: '/API/v1/Tunnel_operations/deletetl' },
-                { text: 'frp配置文件生成', link: '/API/v1/Tunnel_operations/frpconfig' },
-              ]
-            },
-          ]
-        }
-      ],
       '/API/v2/': [
         {
           text: 'API v2 文档',
